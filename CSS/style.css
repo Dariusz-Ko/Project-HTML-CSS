@@ -66,7 +66,7 @@ html {
   justify-content: center;
   align-items: flex-start;
   background-color: brown;
-  background-image: url(../Picture/conscious-design-XwEXvfm6MuQ-unsplash.jpg);
+  background-image: url(../picture/conscious-design-XwEXvfm6MuQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -159,7 +159,7 @@ html {
   justify-content: center;
   align-items: center;
   margin-left: 2px;
-  background-image: url(../Picture/my_picture.jfif);
+  background-image: url(../picture/my_picture.jfif);
   background-size: cover;
 }
 
