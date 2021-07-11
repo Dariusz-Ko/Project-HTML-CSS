@@ -11,7 +11,7 @@ html {
 
 .main-container {
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
   display: flex;
   flex-direction: column;
   background-color: bisque;
@@ -115,7 +115,7 @@ html {
 .our-specialists {
   background-color: #f1f1f1;
   width: 960px;
-  height: 574px;
+  height: auto;
   display: flex;
   /* padding: 20px 0; */
   flex-direction: column;
@@ -158,8 +158,9 @@ html {
 }
 
 .my-circle {
-  width: 29vmin;
-  height: 29vmin;
+  display: flex;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   /* background-color: grey; */
   justify-content: center;
@@ -170,8 +171,9 @@ html {
 }
 
 .circle-2 {
-  width: 29vmin;
-  height: 29vmin;
+  display: flex;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: grey;
   justify-content: center;
@@ -184,6 +186,9 @@ html {
   margin-left: 5%;
 }
 
+.text-1 h3 {
+  font-weight: bold;
+}
 /* SEKCJA "CZYM ZAJMUJE SIĘ NASZA FIRMA" */
 
 .our-offer {
@@ -191,7 +196,7 @@ html {
   width: 960px;
   height: auto;
   display: flex;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   display: flex;
   flex-direction: column;
 }
@@ -213,7 +218,6 @@ html {
   margin: 0 auto;
   padding: 20px 20px;
   vertical-align: middle;
-
   align-content: center;
   justify-content: center;
 }
@@ -228,13 +232,15 @@ html {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  transition: all 0.5s;
   /* z-index: 2; */
 }
 
 .box:hover {
   transform: scale(1.05);
-  transition: 0.5s;
+  transition: all 0.5s;
 }
+
 .box p {
   font-size: small;
 }
@@ -294,4 +300,112 @@ blockquote {
   width: 50px;
   font-size: 18px;
   display: flex;
+}
+
+/* display querry */
+
+@media screen and (max-width: 440px) {
+  .nav-links {
+    display: none;
+  }
+
+  .row:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my-circle {
+    margin: 0;
+    width: 50vmin;
+    height: 50vmin;
+  }
+  .circle-2 {
+    margin: 0;
+    width: 50vmin;
+    height: 50vmin;
+  }
+
+  .text-1 {
+    max-width: 500px;
+    margin-left: 5%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-nav-footer {
+    padding: 0;
+  }
+  .footer-links {
+    padding: 10px;
+  }
+  .our-offer h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .our-specialists-text {
+    text-align: center;
+  }
+
+  .text-1 {
+    text-align: justify;
+    margin-right: 5%;
+  }
+
+  .our-specialists {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  ..our-specialists h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+
+  .our-specialists-text {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 0%;
+  }
+  .our-company {
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-1 h3 {
+    text-align: center;
+  }
+
+  .footer {
+    padding-bottom: 10px;
+  }
+  .footer-links {
+    text-align: center;
+  }
+
+  .left-nav-footer p {
+    text-align: center;
+  }
 }
