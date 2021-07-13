@@ -330,6 +330,7 @@ blockquote {
     width: 50vmin;
     height: 50vmin;
   }
+
   .circle-2 {
     margin: 0;
     width: 50vmin;
@@ -337,8 +338,12 @@ blockquote {
   }
 
   .text-1 {
-    max-width: 500px;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
   }
   .footer {
     display: flex;
@@ -376,7 +381,7 @@ blockquote {
     height: auto;
   }
 
-  ..our-specialists h1 {
+  .our-specialists h1 {
     font-size: 25px;
     text-align: center;
     margin: 0;
