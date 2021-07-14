@@ -57,7 +57,7 @@ html {
 }
 
 .nav-link {
-  width: 160px;
+  width: 100px;
   font-size: 18px;
   display: flex;
   /* justify-content: center; */
@@ -69,7 +69,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: brown;
+  /* background-color: brown; */
   background-image: url(../picture/conscious-design-XwEXvfm6MuQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +132,7 @@ html {
 
 .row:nth-child(even) {
   width: 880px;
-  height: 200px;
+  /* height: 200px; */
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
@@ -146,7 +146,7 @@ html {
 
 .row:nth-child(odd) {
   width: 880px;
-  height: 200px;
+  /* height: 200px; */
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row-reverse;
@@ -166,7 +166,7 @@ html {
   justify-content: center;
   align-items: center;
   margin-left: 2px;
-  background-image: url(../picture/my_picture.jfif);
+  /* background-image: url(../picture/my_picture.jfif); */
   background-size: cover;
 }
 
@@ -223,6 +223,7 @@ html {
 }
 
 .box {
+  position: relative;
   width: 198px;
   height: 193px;
   background-color: #f1f1f1;
@@ -244,10 +245,11 @@ html {
 .box p {
   font-size: small;
 }
+
 .red-circle {
-  position: relative;
-  right: 17px;
-  top: -100px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
   height: 20px;
   width: 20px;
   background-color: red;
@@ -258,7 +260,7 @@ html {
 blockquote {
   text-align: center;
   z-index: 10;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 /* Footer */
@@ -366,10 +368,6 @@ blockquote {
     padding-top: 10px;
   }
 
-  .our-specialists-text {
-    text-align: center;
-  }
-
   .text-1 {
     text-align: justify;
     margin-right: 5%;
@@ -390,7 +388,8 @@ blockquote {
   }
 
   .our-specialists-text {
-    margin-bottom: 5px;
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
     text-align: center;
     margin-left: 0%;
   }
@@ -412,5 +411,15 @@ blockquote {
 
   .left-nav-footer p {
     text-align: center;
+  }
+
+  .box {
+    transition: none;
+  }
+  /* z-index: 2; */
+
+  .box:hover {
+    transform: none;
+    transition: none;
   }
 }
